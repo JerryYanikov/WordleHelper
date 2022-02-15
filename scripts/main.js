@@ -77,7 +77,7 @@ submit.addEventListener('click', function (e) {
   }
   if (allResults.length > 30) {
     possibleSolutions.innerHTML =
-      '<p style="font-size:1rem"> There are way too many options<br> Please provide more inputs <br> Good words to narrow down the options:</p><br> CRANE <br> OTHER <br> NAILS';
+      '<p style="font-size:1rem"> There are way too many options<br> Please provide more inputs. <br> Good words to narrow down the options:</p><br> CRANE <br> OTHER <br> NAILS';
   } else {
     possibleSolutions.innerHTML = allResults;
   }
