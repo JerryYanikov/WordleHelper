@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Wordle Helper</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Correct placements</h1>
+        <p>Letters that are in the correct spot (GREEN)</p>
+        <input type="text" maxlength="1" name="correctFirst" id="correctFirst" class="correct first">
+        <input type="text" maxlength="1" name="correctSecond" id="correctSecond" class="correct second">
+        <input type="text" maxlength="1" name="correctThird" id="correctThird" class="correct third">
+        <input type="text" maxlength="1" name="correctFourth" id="correctFourth" class="correct fourth">
+        <input type="text" maxlength="1" name="correctFifth" id="correctFifth" class="correct fifth">
+
+        <h1>Bad placements</h1>
+        <p>Letters that exist in the wiord but in the wrong spot (Orange)</p>
+        <input type="text" name="orangeFirst" id="orangeFirst" class="orange first">
+        <input type="text" name="orangeSecond" id="orangeSecond" class="orange second">
+        <input type="text" name="orangeThird" id="orangeThird" class="orange third">
+        <input type="text" name="orangeFourth" id="orangeFourth" class="orange fourth">
+        <input type="text" name="orangeFifth" id="orangeFifth" class="orange fifth">
+
+        <h1>bad letters</h1>
+        <p>Letters that does not exist in the word (dark grey)</p>
+        <input type="text" name="badLetters" id="badLetters" class="badLetters">
+
+        <br><button id="submit" class="submit">Search</button>
+
+        <div id="result" class="result">
+            <div class="close" id="close">X</div>
+            <h2>Possible solutions</h2>
+            <div class="possibleSolutions" id="possibleSolutions"></div>
+        </div>
+    </div>
+
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
